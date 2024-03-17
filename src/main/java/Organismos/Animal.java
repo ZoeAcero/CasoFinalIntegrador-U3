@@ -11,4 +11,13 @@ public class Animal extends Organismo{
         this.cantidadOjos = cantidadOjos;
         this.cantidadDientes = cantidadDientes;
     }
+
+    // Metodos getters y setters
+    public int getCantidadPatas() {
+        return cantidadPatas;
+    }
+
+    public void setCantidadPatas(int cantidadPatas) {
+        this.cantidadPatas = cantidadPatas;
+    }
 }
