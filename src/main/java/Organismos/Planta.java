@@ -21,4 +21,12 @@ public class Planta extends Organismo{
     public void setCantidadHojas(int cantidadHojas) {
         this.cantidadHojas = cantidadHojas;
     }
+
+    public int getCantidadFlores() {
+        return cantidadFlores;
+    }
+
+    public void setCantidadFlores(int cantidadFlores) {
+        this.cantidadFlores = cantidadFlores;
+    }
 }
