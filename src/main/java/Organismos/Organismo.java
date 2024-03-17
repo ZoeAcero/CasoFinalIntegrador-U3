@@ -13,6 +13,13 @@ public class Organismo { // Clase padre de todos los organismos
     }
 
     // Metodos getters y setters
+public boolean isEstadoReproductivo() {
+        return estadoReproductivo;
+    }
+
+    public void setEstadoReproductivo(boolean estadoReproductivo) {
+        this.estadoReproductivo = estadoReproductivo;
+    }
 
     public int getSalud() {
         return salud;
