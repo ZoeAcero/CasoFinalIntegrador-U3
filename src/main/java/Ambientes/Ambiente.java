@@ -131,5 +131,13 @@ public class Ambiente {
         this.humedad--;
     }
 
+    public void incrementarCantidadLuz() {
+        this.cantidadLuz++;
+    }
+
+    public void decrementarCantidadLuz() {
+        this.cantidadLuz--;
+    }
+
 
 }
