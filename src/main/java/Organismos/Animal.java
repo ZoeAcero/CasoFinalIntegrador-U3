@@ -28,4 +28,12 @@ public class Animal extends Organismo{
     public void setCantidadOjos(int cantidadOjos) {
         this.cantidadOjos = cantidadOjos;
     }
+
+    public int getCantidadDientes() {
+        return cantidadDientes;
+    }
+
+    public void setCantidadDientes(int cantidadDientes) {
+        this.cantidadDientes = cantidadDientes;
+    }
 }
