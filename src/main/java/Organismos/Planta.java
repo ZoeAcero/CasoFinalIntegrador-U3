@@ -53,4 +53,14 @@ public class Planta extends Organismo{
     public void decrementarFlores(int cantidadFlores) {
         this.cantidadFlores -= cantidadFlores;
     }
+
+    //Metodo override
+    @Override
+    public void incrementarSalud(int salud) {
+        super.incrementarSalud(salud);
+        if (this.getSalud() > 100) {
+            this.setSalud(100);
+        }
+    }
+
 }
