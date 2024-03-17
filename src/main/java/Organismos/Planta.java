@@ -45,4 +45,12 @@ public class Planta extends Organismo{
     public void decrementarHojas(int cantidadHojas) {
         this.cantidadHojas -= cantidadHojas;
     }
+
+    public void incrementarFlores(int cantidadFlores) {
+        this.cantidadFlores += cantidadFlores;
+    }
+
+    public void decrementarFlores(int cantidadFlores) {
+        this.cantidadFlores -= cantidadFlores;
+    }
 }
