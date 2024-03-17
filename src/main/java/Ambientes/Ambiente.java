@@ -147,5 +147,13 @@ public class Ambiente {
         this.recursos++;
     }
 
+    public void incrementarClima() {
+        this.clima++;
+    }
+
+    public void decrementarTerreno() {
+        this.terreno--;
+    }
+
 
 }
