@@ -18,5 +18,9 @@ public class Organismo {
     public Posicion getPosicion() {
         return posicion;
     }
+
+    public void setPosicion(Posicion posicion) {
+        this.posicion = posicion;
+    }
     
 }
