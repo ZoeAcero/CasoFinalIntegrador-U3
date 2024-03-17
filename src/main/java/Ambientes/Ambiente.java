@@ -35,5 +35,13 @@ public class Ambiente {
         this.humedad = humedad;
     }
 
+    public int getCantidadLuz() {
+        return cantidadLuz;
+    }
+
+    public void setCantidadLuz(int cantidadLuz) {
+        this.cantidadLuz = cantidadLuz;
+    }
+
 
 }
