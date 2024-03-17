@@ -27,7 +27,13 @@ public class Ambiente {
         this.temperatura = temperatura;
     }
 
-    
+    public int getHumedad() {
+        return humedad;
+    }
+
+    public void setHumedad(int humedad) {
+        this.humedad = humedad;
+    }
 
 
 }
