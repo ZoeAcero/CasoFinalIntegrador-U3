@@ -15,5 +15,8 @@ public class Organismo {
     }
 
     // Metodos getters y setters
+    public Posicion getPosicion() {
+        return posicion;
+    }
     
 }
