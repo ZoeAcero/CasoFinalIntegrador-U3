@@ -60,4 +60,13 @@ public class Animal extends Organismo{
     public void decrementarDientes(int cantidadDientes) {
         this.cantidadDientes -= cantidadDientes;
     }
+
+    //Metodo override
+    @Override
+    public void incrementarSalud(int salud) {
+        super.incrementarSalud(salud);
+        if (this.getSalud() > 100) {
+            this.setSalud(100);
+        }
+    }
 }
