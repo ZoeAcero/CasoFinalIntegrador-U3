@@ -30,4 +30,12 @@ public class Organismo {
     public void setSalud(int salud) {
         this.salud = salud;
     }
+
+    public void incrementarSalud(int salud) {
+        this.salud += salud;
+    }
+
+    public void decrementarSalud(int salud) {
+        this.salud -= salud;
+    }
 }
