@@ -123,5 +123,13 @@ public class Ambiente {
         this.temperatura--;
     }
 
+    public void incrementarHumedad() {
+        this.humedad++;
+    }
+
+    public void decrementarHumedad() {
+        this.humedad--;
+    }
+
 
 }
