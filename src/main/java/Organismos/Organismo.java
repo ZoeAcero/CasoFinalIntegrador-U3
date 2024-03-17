@@ -22,5 +22,8 @@ public class Organismo {
     public void setPosicion(Posicion posicion) {
         this.posicion = posicion;
     }
-    
+
+    public int getSalud() {
+        return salud;
+    }
 }
