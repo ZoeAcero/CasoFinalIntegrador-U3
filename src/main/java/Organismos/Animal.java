@@ -36,4 +36,12 @@ public class Animal extends Organismo{
     public void setCantidadDientes(int cantidadDientes) {
         this.cantidadDientes = cantidadDientes;
     }
+
+    public void incrementarPatas(int cantidadPatas) {
+        this.cantidadPatas += cantidadPatas;
+    }
+
+    public void decrementarPatas(int cantidadPatas) {
+        this.cantidadPatas -= cantidadPatas;
+    }
 }
