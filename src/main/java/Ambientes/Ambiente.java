@@ -6,4 +6,9 @@ public class Ambiente {
     private int cantidadLuz;
     private Terreno terreno;
     private Recursos recursos;
+    private Clima clima;
+
+    
+
+
 }
