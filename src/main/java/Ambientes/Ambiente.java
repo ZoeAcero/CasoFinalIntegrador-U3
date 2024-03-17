@@ -43,5 +43,13 @@ public class Ambiente {
         this.cantidadLuz = cantidadLuz;
     }
 
+    public Terreno getTerreno() {
+        return terreno;
+    }
+
+    public void setTerreno(Terreno terreno) {
+        this.terreno = terreno;
+    }
+
 
 }
