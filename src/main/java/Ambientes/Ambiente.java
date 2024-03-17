@@ -18,6 +18,15 @@ public class Ambiente {
    }
 
     // Metodos getters y setters
+
+    public int getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(int temperatura) {
+        this.temperatura = temperatura;
+    }
+
     
 
 
