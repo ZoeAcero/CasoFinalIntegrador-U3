@@ -115,5 +115,13 @@ public class Ambiente {
         this.clima = clima;
     }
 
+    public void incrementarTemperatura() {
+        this.temperatura++;
+    }
+
+    public void decrementarTemperatura() {
+        this.temperatura--;
+    }
+
 
 }
