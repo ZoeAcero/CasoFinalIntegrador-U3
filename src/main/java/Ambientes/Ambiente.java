@@ -59,5 +59,13 @@ public class Ambiente {
         this.recursos = recursos;
     }
 
+    public Clima getClima() {
+        return clima;
+    }
+
+    public void setClima(Clima clima) {
+        this.clima = clima;
+    }
+
 
 }
