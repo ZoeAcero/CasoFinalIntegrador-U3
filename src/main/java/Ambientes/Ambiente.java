@@ -99,5 +99,13 @@ public class Ambiente {
         this.recursos = recursos;
     }
 
+    public void incrementarClima(Clima clima) {
+        this.clima = clima;
+    }
+
+    public void decrementarTerreno(Terreno terreno) {
+        this.terreno = terreno;
+    }
+
 
 }
