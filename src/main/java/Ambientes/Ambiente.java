@@ -75,5 +75,13 @@ public class Ambiente {
         this.temperatura -= temperatura;
     }
 
+    public void incrementarHumedad(int humedad) {
+        this.humedad += humedad;
+    }
+
+    public void decrementarHumedad(int humedad) {
+        this.humedad -= humedad;
+    }
+
 
 }
