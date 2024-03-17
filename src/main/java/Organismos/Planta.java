@@ -12,4 +12,13 @@ public class Planta extends Organismo{
         this.cantidadFlores = cantidadFlores;
         this.cantidadFrutos = cantidadFrutos;
     }
+
+    // Metodos getters y setters
+    public int getCantidadHojas() {
+        return cantidadHojas;
+    }
+
+    public void setCantidadHojas(int cantidadHojas) {
+        this.cantidadHojas = cantidadHojas;
+    }
 }
