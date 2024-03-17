@@ -38,4 +38,12 @@ public class Organismo {
     public void decrementarSalud(int salud) {
         this.salud -= salud;
     }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 }
