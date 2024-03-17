@@ -51,5 +51,13 @@ public class Ambiente {
         this.terreno = terreno;
     }
 
+    public Recursos getRecursos() {
+        return recursos;
+    }
+
+    public void setRecursos(Recursos recursos) {
+        this.recursos = recursos;
+    }
+
 
 }
