@@ -91,5 +91,13 @@ public class Ambiente {
         this.cantidadLuz -= cantidadLuz;
     }
 
+    public void incrementarTerreno(Terreno terreno) {
+        this.terreno = terreno;
+    }
+
+    public void incrementarRecursos(Recursos recursos) {
+        this.recursos = recursos;
+    }
+
 
 }
