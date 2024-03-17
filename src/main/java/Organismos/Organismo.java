@@ -1,27 +1,18 @@
 package Organismos;
 
-public class Organismo {
-    private Posicion posicion;
+public class Organismo { // Clase padre de todos los organismos
     private int salud;
     private int edad;
     private boolean estadoReproductivo;
 
 
-    public Organismo(Posicion posicion, int salud, int edad, boolean estadoReproductivo) {
-        this.posicion = posicion;
+    public Organismo(int salud, int edad, boolean estadoReproductivo) {
         this.salud = salud;
         this.edad = edad;
         this.estadoReproductivo = estadoReproductivo;
     }
 
     // Metodos getters y setters
-    public Posicion getPosicion() {
-        return posicion;
-    }
-
-    public void setPosicion(Posicion posicion) {
-        this.posicion = posicion;
-    }
 
     public int getSalud() {
         return salud;
