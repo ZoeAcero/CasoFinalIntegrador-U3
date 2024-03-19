@@ -19,4 +19,12 @@ public class SimulacionResultados {
     public void setSaludPromedio(double saludPromedio) {
         this.saludPromedio = saludPromedio;
     }
+
+    public double getTamañoPromedio() {
+        return tamañoPromedio;
+    }
+
+    public void setTamañoPromedio(double tamañoPromedio) {
+        this.tamañoPromedio = tamañoPromedio;
+    }
 }
