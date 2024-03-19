@@ -10,5 +10,15 @@ public class ResolucionProblemas {
         this.registro = registro;
     }
 
-    public boolean buscarEquilibrioEcologico
+    public boolean buscarEquilibrioEcologico() {
+        List<SimulacionResultados> resultados = registro.getResultados();
+        for (SimulacionResultados resultado : resultados) {
+            if (resultado.getSaludPromedio() < 0.5 && resultado.getTamañoPromedio() < 0.5) {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    
 }
