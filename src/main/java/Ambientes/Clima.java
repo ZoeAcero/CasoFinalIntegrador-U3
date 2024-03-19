@@ -51,4 +51,12 @@ public class Clima {
     public void decrementarHumedad(int humedad) {
         this.humedad -= humedad;
     }
+
+    public void incrementarCantidadLuz(int cantidadLuz) {
+        this.cantidadLuz += cantidadLuz;
+    }
+
+    public void decrementarCantidadLuz(int cantidadLuz) {
+        this.cantidadLuz -= cantidadLuz;
+    }
 }
