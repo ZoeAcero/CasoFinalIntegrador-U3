@@ -14,4 +14,11 @@ public class Creciemiento_Reproduccion {
         organismo.setEdad(organismo.getEdad() + 1);
     }
 
+    public void reproducir(Organismo organismo) {
+        if (organismo.isEstadoReproductivo()) {
+            Organismo nuevoOrganismo = new Organismo(organismo.getSalud(), 0, true);
+            simulador.agregarOrganismo(nuevoOrganismo);
+        }
+    }
+
 }
