@@ -52,6 +52,14 @@ public class Recursos {
         this.luz -= luz;
     }
 
+    public void incrementarNutrientes(int nutrientes) {
+        this.nutrientes += nutrientes;
+    }
+
+    public void decrementarNutrientes(int nutrientes) {
+        this.nutrientes -= nutrientes;
+    }
+
 
 
 }
