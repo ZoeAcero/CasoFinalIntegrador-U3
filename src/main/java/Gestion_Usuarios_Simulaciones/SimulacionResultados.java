@@ -35,5 +35,5 @@ public class SimulacionResultados {
     public void setTotalOrganismos(int totalOrganismos) {
         this.totalOrganismos = totalOrganismos;
     }
-    
+
 }
