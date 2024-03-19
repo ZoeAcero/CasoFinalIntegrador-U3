@@ -13,4 +13,16 @@ public class SimulacionConfiguracion {
 
     // Getters and Setters
 
+    public int getTamañoPoblacion() {
+        return tamañoPoblacion;
+    }
+
+    public void setTamañoPoblacion(int tamañoPoblacion) {
+        this.tamañoPoblacion = tamañoPoblacion;
+    }
+
+    public double getTasaCrecimiento() {
+        return tasaCrecimiento;
+    }
+
 }
