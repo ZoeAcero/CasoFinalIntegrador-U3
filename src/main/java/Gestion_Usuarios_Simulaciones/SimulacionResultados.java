@@ -27,4 +27,12 @@ public class SimulacionResultados {
     public void setTamañoPromedio(double tamañoPromedio) {
         this.tamañoPromedio = tamañoPromedio;
     }
+
+    public int getTotalOrganismos() {
+        return totalOrganismos;
+    }
+
+    public void setTotalOrganismos(int totalOrganismos) {
+        this.totalOrganismos = totalOrganismos;
+    }
 }
