@@ -36,4 +36,7 @@ public class SimulacionResultados {
         this.totalOrganismos = totalOrganismos;
     }
 
+    public Comparable getNombreSimulacion() {
+        return null;
+    }
 }
