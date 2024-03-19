@@ -13,6 +13,10 @@ public class Simulador {
 
     // Metodos para simular interacciones
 
+    public void agregarOrganismo(Organismo organismo) {
+        this.organismos.add(organismo);
+    }
+
     public void simularInteracciones() {
         for (Organismo organismo : organismos) {
             organismo.interactuar(ambiente);
@@ -34,5 +38,6 @@ public class Simulador {
     public Ambiente getAmbiente() {
         return ambiente;
     }
+
 
 }
