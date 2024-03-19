@@ -24,5 +24,8 @@ public class VisualizacionDatos {
             dataset.addValue(resultado.getSaludPromedio(), "Salud Promedio", resultado.getNombreSimulacion());
             dataset.addValue(resultado.getTamañoPromedio(), "Tamaño Promedio", resultado.getNombreSimulacion());
         }
+
+        // Crear el grafico
+        JFreeChart chart = ChartFactory.createLineChart("Resultados de Simulaciones", "Simulaciones", "Valor", dataset);
     }
 }
