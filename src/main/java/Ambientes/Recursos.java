@@ -120,7 +120,17 @@ public class Recursos {
         this.nutrientes--;
     }
 
-    
+    public void incrementarRecursos(int cantidad) {
+        this.agua += cantidad;
+        this.luz += cantidad;
+        this.nutrientes += cantidad;
+    }
+
+    public void decrementarRecursos(int cantidad) {
+        this.agua -= cantidad;
+        this.luz -= cantidad;
+        this.nutrientes -= cantidad;
+    }
 
 
 
