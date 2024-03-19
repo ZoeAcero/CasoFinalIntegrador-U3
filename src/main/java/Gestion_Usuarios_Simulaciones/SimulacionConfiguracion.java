@@ -33,4 +33,12 @@ public class SimulacionConfiguracion {
         return numeroIteraciones;
     }
 
+    public void setNumeroIteraciones(int numeroIteraciones) {
+        this.numeroIteraciones = numeroIteraciones;
+    }
+
+    public void configurarSimulacion() {
+        // Configurar simulacion
+    }
+
 }
