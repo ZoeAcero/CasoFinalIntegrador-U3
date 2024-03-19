@@ -167,6 +167,12 @@ public class Ambiente {
         this.clima.incrementarCantidadLuz(cantidadLuz);
     }
 
+    public void decrementarClima(int temperatura, int humedad, int cantidadLuz) {
+        this.clima.decrementarTemperatura(temperatura);
+        this.clima.decrementarHumedad(humedad);
+        this.clima.decrementarCantidadLuz(cantidadLuz);
+    }
+
 
 
 
