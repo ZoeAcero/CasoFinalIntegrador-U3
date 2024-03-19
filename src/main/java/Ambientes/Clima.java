@@ -27,4 +27,12 @@ public class Clima {
     public void setHumedad(int humedad) {
         this.humedad = humedad;
     }
+
+    public int getCantidadLuz() {
+        return cantidadLuz;
+    }
+
+    public void setCantidadLuz(int cantidadLuz) {
+        this.cantidadLuz = cantidadLuz;
+    }
 }
