@@ -139,25 +139,11 @@ public class Ambiente {
         this.cantidadLuz--;
     }
 
-    public void incrementarTerreno() {
-        this.terreno++;
+    public void incrementarTerreno(int cantidad) {
+        this.terreno.incrementarCantidad(cantidad);
     }
 
-    public void incrementarRecursos() {
-        this.recursos++;
-    }
-
-    public void incrementarClima() {
-        this.clima++;
-    }
-
-    public void decrementarTerreno() {
-        this.terreno--;
-    }
-
-    public void decrementarRecursos() {
-        this.recursos--;
-    }
+    
 
 
 }
