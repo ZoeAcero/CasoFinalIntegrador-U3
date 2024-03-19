@@ -7,5 +7,10 @@ public class Integracion_NuevasFunciones {
         this.investigadorModelo = investigadorModelo;
     }
 
-    
+    public void adaptarSimulador() {
+        if (investigadorModelo != null) {
+            investigadorModelo.ejecutarModelo();
+            investigadorModelo.definirFunciones();
+        }
+    }
 }
