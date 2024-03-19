@@ -100,6 +100,14 @@ public class Recursos {
         this.luz--;
     }
 
+    public void incrementarNutrientes() {
+        this.nutrientes++;
+    }
+
+    public void decrementarNutrientes() {
+        this.nutrientes--;
+    }
+
 
 
 }
