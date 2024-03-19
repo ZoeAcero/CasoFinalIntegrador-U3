@@ -1,4 +1,4 @@
-package Analisis_Avanzado;
+package Analisis_Avanzado.Integracion_Nuevas_Funciones;
 
 public class Integracion_NuevasFunciones {
     private InvestigadorModelo investigadorModelo;
