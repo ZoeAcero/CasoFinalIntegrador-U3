@@ -65,6 +65,11 @@ public boolean isEstadoReproductivo() {
         if (edad > 100) {
             decrementarSalud(10);
         }
+
+        // Si el organismo es joven, gana salud
+        if (edad < 10) {
+            incrementarSalud(10);
+        }
     }
 
 
