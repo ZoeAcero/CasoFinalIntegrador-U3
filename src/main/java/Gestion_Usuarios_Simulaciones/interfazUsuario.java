@@ -10,7 +10,8 @@ public class interfazUsuario {
         this.configuracion = new SimulacionConfiguracion();
 
         JFrame frame = new JFrame("Simulador de Dinámicas Poblacionales");
-        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
     }
 
 }
