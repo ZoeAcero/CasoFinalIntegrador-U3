@@ -27,4 +27,12 @@ public class Simulador {
         this.ambiente = ambiente;
     }
 
+    public List<Organismo> getOrganismos() {
+        return organismos;
+    }
+
+    public Ambiente getAmbiente() {
+        return ambiente;
+    }
+
 }
