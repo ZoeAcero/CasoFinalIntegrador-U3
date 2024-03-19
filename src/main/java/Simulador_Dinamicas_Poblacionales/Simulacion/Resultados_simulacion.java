@@ -1,4 +1,4 @@
-package Simulador_Dinamicas_Poblacionales;
+package Simulador_Dinamicas_Poblacionales.Simulacion;
 import Modelo_Entidades.Ambientes.Organismos.Organismo;
 import java.util.List;
 
