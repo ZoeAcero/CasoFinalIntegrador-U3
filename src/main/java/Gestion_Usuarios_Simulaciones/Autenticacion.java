@@ -6,5 +6,13 @@ public class Autenticacion {
     private int intentosFallidos = 0;
     private long tiempoBloqueo = 0;
 
-    public boolean autenticarUsuario()
+    public boolean autenticarUsuario(String usuario, String contraseña) {
+        long tiempoActual = System.currentTimeMillis();
+        if (tiempoActual < tiempoBloqueo) {
+            System.out.println("El sistema está bloqueado. Intente más tarde.");
+            return false;
+        }
+
+        
+    }
 }
