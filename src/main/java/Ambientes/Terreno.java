@@ -33,5 +33,13 @@ public class Terreno {
         return nutrientes;
     }
 
+    public void setNutrientes(int nutrientes) {
+        this.nutrientes = nutrientes;
+    }
+
+    public void incrementarNutrientes(int nutrientes) {
+        this.nutrientes += nutrientes;
+    }
+
 
 
