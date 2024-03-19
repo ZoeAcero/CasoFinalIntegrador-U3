@@ -11,4 +11,11 @@ import javax.swing.*;
 import java.util.List;
 
 public class VisualizacionDatos {
+    private RegistroActividades registro;
+
+    public VisualizacionDatos(RegistroActividades registro) {
+        this.registro = registro;
+    }
+
+    
 }
