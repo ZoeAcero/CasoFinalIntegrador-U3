@@ -25,5 +25,13 @@ public class Terreno {
         return cantidad;
     }
 
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public int getNutrientes() {
+        return nutrientes;
+    }
+
 
 
