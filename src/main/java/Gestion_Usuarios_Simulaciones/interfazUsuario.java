@@ -24,6 +24,13 @@ public class interfazUsuario {
 
         JButton botonConfigurar = new JButton("Configurar simulación");
         botonConfigurar.addActionListener(e -> configuracion.configurarSimulacion());
+
+        JPanel panel = new JPanel();
+        panel.add(botonIniciar);
+        panel.add(botonPausar);
+        panel.add(botonDetener);
+        panel.add(botonConfigurar);
+        
     }
 
 }
