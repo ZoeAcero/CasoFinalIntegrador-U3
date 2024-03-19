@@ -148,6 +148,13 @@ public class Ambiente {
     }
 
 
+    public void incrementarRecursos(int agua, int luz, int nutrientes) {
+        this.recursos.incrementarAgua(agua);
+        this.recursos.incrementarLuz(luz);
+        this.recursos.incrementarNutrientes(nutrientes);
+    }
+
+
 
 
 }
