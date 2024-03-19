@@ -11,4 +11,12 @@ public class Simulador {
     private List<Organismo> organismos;
     private Ambiente ambiente;
 
+    // Metodos para simular interacciones
+
+    public void simularInteracciones() {
+        for (Organismo organismo : organismos) {
+            organismo.interactuar(ambiente);
+        }
+    }
+
 }

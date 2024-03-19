@@ -1,5 +1,7 @@
 package Modelo_Entidades.Ambientes.Organismos;
 
+import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
+
 public class Organismo { // Clase padre de todos los organismos
     private int salud;
     private int edad;
@@ -43,5 +45,8 @@ public boolean isEstadoReproductivo() {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public void interactuar(Ambiente ambiente) {
     }
 }
