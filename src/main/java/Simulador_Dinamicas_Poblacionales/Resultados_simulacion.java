@@ -17,5 +17,11 @@ public class Resultados_simulacion {
         return (double) totalSalud / organismos.size();
     }
 
-    
+    public double calcularTamañoPromedio() {
+        int totalTamaño = 0;
+        for (Organismo organismo : organismos) {
+            totalTamaño += organismo.getTamaño();
+        }
+        return (double) totalTamaño / organismos.size();
+    }
 }
