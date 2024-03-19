@@ -5,4 +5,10 @@ import Gestion_Usuarios_Simulaciones.Registro_Actividades.SimulacionResultados;
 
 public class ResolucionProblemas {
     private RegistroActividades registro;
+
+    public ResolucionProblemas(RegistroActividades registro) {
+        this.registro = registro;
+    }
+
+    public boolean buscarEquilibrioEcologico
 }
