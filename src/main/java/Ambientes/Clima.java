@@ -35,4 +35,12 @@ public class Clima {
     public void setCantidadLuz(int cantidadLuz) {
         this.cantidadLuz = cantidadLuz;
     }
+
+    public void incrementarTemperatura(int tempertaura) {
+        this.tempertaura += tempertaura;
+    }
+
+    public void decrementarTemperatura(int tempertaura) {
+        this.tempertaura -= tempertaura;
+    }
 }
