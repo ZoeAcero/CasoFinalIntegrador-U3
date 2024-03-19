@@ -1,4 +1,5 @@
-package Gestion_Usuarios_Simulaciones;
+package Gestion_Usuarios_Simulaciones.Registro_Actividades;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -27,5 +28,5 @@ public class RegistroActividades {
     public List<SimulacionResultados> getResultados() {
         return resultados;
     }
-    
+
 }

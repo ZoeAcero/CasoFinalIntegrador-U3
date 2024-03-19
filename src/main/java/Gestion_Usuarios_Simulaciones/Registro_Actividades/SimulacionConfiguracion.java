@@ -1,4 +1,4 @@
-package Gestion_Usuarios_Simulaciones;
+package Gestion_Usuarios_Simulaciones.Registro_Actividades;
 
 public class SimulacionConfiguracion {
     private int tamañoPoblacion;
