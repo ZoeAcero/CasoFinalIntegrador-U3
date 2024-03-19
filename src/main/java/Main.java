@@ -28,5 +28,27 @@ public class Main {
             scanner.nextLine (); // Consumir el salto de línea
             int opcion = scanner.nextInt();
 
-            
+            switch (opcion) {
+                case 1:
+                    modeladoEntidadesMenu ( ambiente );
+                    break;
+                case 2:
+                    simuladorPoblacionalMenu ( ambiente, simulador );
+                    break;
+                case 3:
+                    gestionUsuariosSimulacionesMenu ();
+                    break;
+                case 4:
+                    analisisAvanzadoMenu (  scanner );
+                    break;
+                case 5:
+                    salir = true;
+                    System.out.println ( "Saliendo del programa..." );
+                    break;
+                default:
+                    System.out.println ( "Opción no válida, intente de nuevo." );
+                    break;
+            }
+        }
+    }
 }
