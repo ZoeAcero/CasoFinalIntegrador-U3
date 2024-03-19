@@ -20,6 +20,14 @@ public class Recursos {
         this.agua = agua;
     }
 
+    public int getLuz() {
+        return luz;
+    }
+
+    public void setLuz(int luz) {
+        this.luz = luz;
+    }
+
 
 
 }
