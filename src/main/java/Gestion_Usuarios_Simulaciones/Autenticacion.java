@@ -13,6 +13,16 @@ public class Autenticacion {
             return false;
         }
 
-        
+        if (usuario.equals(usuarioAlmacenado) && contraseña.equals(contrasenaAlmacenada)) {
+            intentosFallidos = 0;
+            return true;
+        } else {
+            intentosFallidos++;
+            if (intentosFallidos >= 3) {
+                tiempoBloqueo = tiempoActual + 300000;
+                System.out.println("Ha excedido el número de intentos permitidos. El sistema se bloqueará por 5 minutos.");
+            }
+            return false;
+        }
     }
 }
