@@ -72,6 +72,12 @@ public class Recursos {
         this.nutrientes -= nutrientes;
     }
 
+    public void incrementarRecursos(Recursos recursos) {
+        this.agua += recursos.getAgua();
+        this.luz += recursos.getLuz();
+        this.nutrientes += recursos.getNutrientes();
+    }
+
 
 
 }
