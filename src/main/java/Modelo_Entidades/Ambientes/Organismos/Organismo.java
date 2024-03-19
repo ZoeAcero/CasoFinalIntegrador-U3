@@ -1,4 +1,4 @@
-package Organismos;
+package Modelo_Entidades.Ambientes.Organismos;
 
 public class Organismo { // Clase padre de todos los organismos
     private int salud;

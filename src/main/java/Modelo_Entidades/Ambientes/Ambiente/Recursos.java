@@ -1,4 +1,4 @@
-package Ambientes;
+package Modelo_Entidades.Ambientes.Ambiente;
 
 public class Recursos {
     private int agua;

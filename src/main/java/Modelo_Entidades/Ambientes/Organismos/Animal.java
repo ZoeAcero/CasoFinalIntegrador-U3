@@ -1,4 +1,4 @@
-package Organismos;
+package Modelo_Entidades.Ambientes.Organismos;
 
 public class Animal extends Organismo{
     private int cantidadPatas;

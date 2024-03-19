@@ -1,4 +1,4 @@
-package Organismos;
+package Modelo_Entidades.Ambientes.Organismos;
 
 public class Planta extends Organismo{
     private int cantidadHojas;
