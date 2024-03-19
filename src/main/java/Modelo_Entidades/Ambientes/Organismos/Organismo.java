@@ -60,6 +60,11 @@ public boolean isEstadoReproductivo() {
         if (ambiente.getRecursos().getCantidadAgua() < 10 || ambiente.getRecursos().getCantidadComida() < 10) {
             decrementarSalud(10);
         }
+
+        // Si el organismo es muy viejo, pierde salud
+        if (edad > 100) {
+            decrementarSalud(10);
+        }
     }
 
 
