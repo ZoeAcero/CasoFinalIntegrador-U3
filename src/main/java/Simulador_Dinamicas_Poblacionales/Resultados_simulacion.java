@@ -24,4 +24,8 @@ public class Resultados_simulacion {
         }
         return (double) totalTamaño / organismos.size();
     }
+
+    public int contarOrganismos() {
+        return organismos.size();
+    }
 }
