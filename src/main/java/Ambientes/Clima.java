@@ -59,4 +59,5 @@ public class Clima {
     public void decrementarCantidadLuz(int cantidadLuz) {
         this.cantidadLuz -= cantidadLuz;
     }
+
 }

@@ -155,7 +155,9 @@ public class Ambiente {
         this.terreno--;
     }
 
-
+    public void decrementarRecursos() {
+        this.recursos--;
+    }
 
 
 }
