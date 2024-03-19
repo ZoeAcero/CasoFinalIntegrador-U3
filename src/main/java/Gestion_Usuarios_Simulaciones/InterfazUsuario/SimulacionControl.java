@@ -1,4 +1,4 @@
-package Gestion_Usuarios_Simulaciones;
+package Gestion_Usuarios_Simulaciones.InterfazUsuario;
 
 public class SimulacionControl {
     public void iniciarSimulacion() {

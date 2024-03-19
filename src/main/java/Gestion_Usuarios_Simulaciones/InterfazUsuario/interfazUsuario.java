@@ -1,4 +1,5 @@
-package Gestion_Usuarios_Simulaciones;
+package Gestion_Usuarios_Simulaciones.InterfazUsuario;
+
 import javax.swing.*;
 
 public class interfazUsuario {
