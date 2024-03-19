@@ -60,4 +60,11 @@ public class Recursos {
         this.nutrientes -= nutrientes;
     }
 
+    public int getCantidadAgua() {
+        return 0;
+    }
+
+    public int getCantidadComida() {
+        return 0;
+    }
 }

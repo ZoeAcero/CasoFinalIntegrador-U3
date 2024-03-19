@@ -55,6 +55,11 @@ public boolean isEstadoReproductivo() {
         if (temperatura < 10 || temperatura > 40) {
             decrementarSalud(10);
         }
+
+        // Si los recursos son escasos, el organismo pierde salud
+        if (ambiente.getRecursos().getCantidadAgua() < 10 || ambiente.getRecursos().getCantidadComida() < 10) {
+            decrementarSalud(10);
+        }
     }
 
 
