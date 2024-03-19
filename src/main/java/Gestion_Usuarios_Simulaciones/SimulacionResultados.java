@@ -10,4 +10,13 @@ public class SimulacionResultados {
         this.tamañoPromedio = tamañoPromedio;
         this.totalOrganismos = totalOrganismos;
     }
+
+    // Getters and Setters
+    public double getSaludPromedio() {
+        return saludPromedio;
+    }
+
+    public void setSaludPromedio(double saludPromedio) {
+        this.saludPromedio = saludPromedio;
+    }
 }
