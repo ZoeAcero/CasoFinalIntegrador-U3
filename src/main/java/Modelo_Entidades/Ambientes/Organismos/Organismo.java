@@ -73,4 +73,7 @@ public boolean isEstadoReproductivo() {
     }
 
 
+    public int getTamaño() {
+        return 0;
+    }
 }
