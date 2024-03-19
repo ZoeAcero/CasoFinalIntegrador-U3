@@ -143,7 +143,11 @@ public class Ambiente {
         this.terreno.incrementarCantidad(cantidad);
     }
 
-    
+    public void decrementarTerreno(int cantidad) {
+        this.terreno.decrementarCantidad(cantidad);
+    }
+
+
 
 
 }
