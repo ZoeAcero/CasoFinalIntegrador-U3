@@ -173,6 +173,19 @@ public class Ambiente {
         this.clima.decrementarCantidadLuz(cantidadLuz);
     }
 
+    //Metodo override
+    @Override
+    public String toString() {
+        return "Ambiente{" +
+                "temperatura=" + temperatura +
+                ", humedad=" + humedad +
+                ", cantidadLuz=" + cantidadLuz +
+                ", terreno=" + terreno +
+                ", recursos=" + recursos +
+                ", clima=" + clima +
+                '}';
+    }
+
 
 
 
