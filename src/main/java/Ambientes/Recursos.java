@@ -11,6 +11,15 @@ public class Recursos {
         this.nutrientes = nutrientes;
     }
 
+    // Metodos getters y setters
+    public int getAgua() {
+        return agua;
+    }
+
+    public void setAgua(int agua) {
+        this.agua = agua;
+    }
+
 
 
 }
