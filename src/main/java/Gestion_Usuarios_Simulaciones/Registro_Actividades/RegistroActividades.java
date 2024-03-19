@@ -29,4 +29,7 @@ public class RegistroActividades {
         return resultados;
     }
 
+    public List<SimulacionResultados> getSimulaciones() {
+        return null;
+    }
 }
