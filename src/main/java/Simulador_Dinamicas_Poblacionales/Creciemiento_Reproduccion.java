@@ -9,4 +9,9 @@ public class Creciemiento_Reproduccion {
         this.simulador = simulador;
     }
 
+    public void crecer(Organismo organismo) {
+        organismo.incrementarSalud(10);
+        organismo.setEdad(organismo.getEdad() + 1);
+    }
+
 }
