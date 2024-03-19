@@ -154,6 +154,12 @@ public class Ambiente {
         this.recursos.incrementarNutrientes(nutrientes);
     }
 
+    public void decrementarRecursos(int agua, int luz, int nutrientes) {
+        this.recursos.decrementarAgua(agua);
+        this.recursos.decrementarLuz(luz);
+        this.recursos.decrementarNutrientes(nutrientes);
+    }
+
 
 
 
