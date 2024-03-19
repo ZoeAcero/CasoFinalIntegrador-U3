@@ -36,6 +36,14 @@ public class Recursos {
         this.nutrientes = nutrientes;
     }
 
+    public void incrementarAgua(int agua) {
+        this.agua += agua;
+    }
+
+    public void decrementarAgua(int agua) {
+        this.agua -= agua;
+    }
+
 
 
 }
