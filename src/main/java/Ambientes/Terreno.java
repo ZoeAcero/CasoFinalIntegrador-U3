@@ -12,5 +12,11 @@ public class Terreno {
         this.nutrientes = nutrientes;
     }
 
+    // Metodos getters y setters
+    public String getTipo() {
+        return tipo;
+    }
+    
+
 
 
