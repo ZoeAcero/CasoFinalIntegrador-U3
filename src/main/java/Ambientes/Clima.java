@@ -10,4 +10,13 @@ public class Clima {
         this.humedad = humedad;
         this.cantidadLuz = cantidadLuz;
     }
+
+    // Metodos getters y setters
+    public int getTempertaura() {
+        return tempertaura;
+    }
+
+    public void setTempertaura(int tempertaura) {
+        this.tempertaura = tempertaura;
+    }
 }
