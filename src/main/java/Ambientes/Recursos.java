@@ -92,6 +92,14 @@ public class Recursos {
         this.agua--;
     }
 
+    public void incrementarLuz() {
+        this.luz++;
+    }
+
+    public void decrementarLuz() {
+        this.luz--;
+    }
+
 
 
 }
