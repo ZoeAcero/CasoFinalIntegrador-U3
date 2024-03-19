@@ -25,4 +25,12 @@ public class SimulacionConfiguracion {
         return tasaCrecimiento;
     }
 
+    public void setTasaCrecimiento(double tasaCrecimiento) {
+        this.tasaCrecimiento = tasaCrecimiento;
+    }
+
+    public int getNumeroIteraciones() {
+        return numeroIteraciones;
+    }
+
 }
