@@ -17,5 +17,12 @@ public class VisualizacionDatos {
         this.registro = registro;
     }
 
-    
+    public void mostrarDatosSimulacion() {
+        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+        List<SimulacionResultados> resultados = registro.getSimulaciones();
+        for (SimulacionResultados resultado : resultados) {
+            dataset.addValue(resultado.getSaludPromedio(), "Salud Promedio", resultado.getNombreSimulacion());
+            dataset.addValue(resultado.getTamañoPromedio(), "Tamaño Promedio", resultado.getNombreSimulacion());
+        }
+    }
 }
