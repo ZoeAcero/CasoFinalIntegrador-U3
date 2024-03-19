@@ -19,4 +19,12 @@ public class Clima {
     public void setTempertaura(int tempertaura) {
         this.tempertaura = tempertaura;
     }
+
+    public int getHumedad() {
+        return humedad;
+    }
+
+    public void setHumedad(int humedad) {
+        this.humedad = humedad;
+    }
 }
