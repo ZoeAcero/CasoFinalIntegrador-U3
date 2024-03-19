@@ -108,6 +108,20 @@ public class Recursos {
         this.nutrientes--;
     }
 
+    public void incrementarRecursos() {
+        this.agua++;
+        this.luz++;
+        this.nutrientes++;
+    }
+
+    public void decrementarRecursos() {
+        this.agua--;
+        this.luz--;
+        this.nutrientes--;
+    }
+
+    
+
 
 
 }
