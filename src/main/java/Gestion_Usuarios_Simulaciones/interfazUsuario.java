@@ -15,6 +15,9 @@ public class interfazUsuario {
 
         JButton botonIniciar = new JButton("Iniciar simulación");
         botonIniciar.addActionListener(e -> control.iniciarSimulacion());
+
+        JButton botonPausar = new JButton("Pausar simulación");
+        botonPausar.addActionListener(e -> control.pausarSimulacion());
     }
 
 }
