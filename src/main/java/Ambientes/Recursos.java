@@ -28,6 +28,14 @@ public class Recursos {
         this.luz = luz;
     }
 
+    public int getNutrientes() {
+        return nutrientes;
+    }
+
+    public void setNutrientes(int nutrientes) {
+        this.nutrientes = nutrientes;
+    }
+
 
 
 }
