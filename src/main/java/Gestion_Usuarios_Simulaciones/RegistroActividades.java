@@ -18,4 +18,13 @@ public class RegistroActividades {
     public void agregarResultados(SimulacionResultados resultados) {
         this.resultados.add(resultados);
     }
+
+    // Getters
+    public List<SimulacionConfiguracion> getConfiguraciones() {
+        return configuraciones;
+    }
+
+    public List<SimulacionResultados> getResultados() {
+        return resultados;
+    }
 }
