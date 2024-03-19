@@ -41,5 +41,13 @@ public class Terreno {
         this.nutrientes += nutrientes;
     }
 
+    public void decrementarNutrientes(int nutrientes) {
+        this.nutrientes -= nutrientes;
+    }
+
+    public void incrementarCantidad(int cantidad) {
+        this.cantidad += cantidad;
+    }
+
 
 
