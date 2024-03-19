@@ -49,5 +49,11 @@ public class Terreno {
         this.cantidad += cantidad;
     }
 
+    public void decrementarCantidad(int cantidad) {
+        this.cantidad -= cantidad;
+    }
+
+}
+
 
 
