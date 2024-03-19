@@ -19,4 +19,12 @@ public class Simulador {
         }
     }
 
+    public void setOrganismos(List<Organismo> organismos) {
+        this.organismos = organismos;
+    }
+
+    public void setAmbiente(Ambiente ambiente) {
+        this.ambiente = ambiente;
+    }
+
 }
