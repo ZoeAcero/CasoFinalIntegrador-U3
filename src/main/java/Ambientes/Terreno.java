@@ -6,5 +6,11 @@ public class Terreno {
     private int cantidad;
     private int nutrientes;
 
-    
+    public Terreno(String tipo, int cantidad, int nutrientes) {
+        this.tipo = tipo;
+        this.cantidad = cantidad;
+        this.nutrientes = nutrientes;
+    }
+
+
 
