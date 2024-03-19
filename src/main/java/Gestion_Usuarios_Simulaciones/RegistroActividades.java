@@ -27,4 +27,5 @@ public class RegistroActividades {
     public List<SimulacionResultados> getResultados() {
         return resultados;
     }
+    
 }
