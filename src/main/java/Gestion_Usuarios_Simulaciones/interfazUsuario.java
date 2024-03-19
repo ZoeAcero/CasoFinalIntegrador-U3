@@ -12,6 +12,9 @@ public class interfazUsuario {
         JFrame frame = new JFrame("Simulador de Dinámicas Poblacionales");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
+
+        JButton botonIniciar = new JButton("Iniciar simulación");
+        botonIniciar.addActionListener(e -> control.iniciarSimulacion());
     }
 
 }
