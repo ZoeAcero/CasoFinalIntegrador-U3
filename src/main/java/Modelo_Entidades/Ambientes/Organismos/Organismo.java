@@ -48,5 +48,14 @@ public boolean isEstadoReproductivo() {
     }
 
     public void interactuar(Ambiente ambiente) {
+
+        int temperatura = ambiente.getTemperatura();
+
+        // Si la temperatura es demasiado baja o demasiado alta, el organismo pierde salud
+        if (temperatura < 10 || temperatura > 40) {
+            decrementarSalud(10);
+        }
     }
+
+
 }
