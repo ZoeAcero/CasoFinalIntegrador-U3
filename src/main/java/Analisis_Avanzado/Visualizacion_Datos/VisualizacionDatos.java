@@ -1,4 +1,4 @@
-package Analisis_Avanzado;
+package Analisis_Avanzado.Visualizacion_Datos;
 
 import Gestion_Usuarios_Simulaciones.Registro_Actividades.RegistroActividades;
 import Gestion_Usuarios_Simulaciones.Registro_Actividades.SimulacionResultados;
