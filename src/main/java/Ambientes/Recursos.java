@@ -44,6 +44,14 @@ public class Recursos {
         this.agua -= agua;
     }
 
+    public void incrementarLuz(int luz) {
+        this.luz += luz;
+    }
+
+    public void decrementarLuz(int luz) {
+        this.luz -= luz;
+    }
+
 
 
 }
