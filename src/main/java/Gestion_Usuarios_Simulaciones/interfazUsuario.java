@@ -30,7 +30,9 @@ public class interfazUsuario {
         panel.add(botonPausar);
         panel.add(botonDetener);
         panel.add(botonConfigurar);
-        
+
+        frame.add(panel);
+        frame.setVisible(true);
     }
 
 }
