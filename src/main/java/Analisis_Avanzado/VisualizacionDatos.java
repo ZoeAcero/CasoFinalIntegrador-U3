@@ -27,5 +27,13 @@ public class VisualizacionDatos {
 
         // Crear el grafico
         JFreeChart chart = ChartFactory.createLineChart("Resultados de Simulaciones", "Simulaciones", "Valor", dataset);
+
+        // Mostrar el grafico
+        ChartPanel chartPanel = new ChartPanel(chart);
+        JFrame frame = new JFrame();
+        frame.setContentPane(chartPanel);
+        frame.setSize(800, 600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
