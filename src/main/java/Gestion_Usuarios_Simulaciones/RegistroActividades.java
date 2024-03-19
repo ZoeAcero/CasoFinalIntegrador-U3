@@ -10,4 +10,12 @@ public class RegistroActividades {
         this.configuraciones = new ArrayList<>();
         this.resultados = new ArrayList<>();
     }
+
+    public void agregarConfiguracion(SimulacionConfiguracion configuracion) {
+        this.configuraciones.add(configuracion);
+    }
+
+    public void agregarResultados(SimulacionResultados resultados) {
+        this.resultados.add(resultados);
+    }
 }
