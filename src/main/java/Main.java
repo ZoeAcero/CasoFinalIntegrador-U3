@@ -467,6 +467,57 @@ public class Main {
     }
 
 
+    private static void interfazUsuario () {
+        Scanner scanner = new Scanner ( System.in );
+        boolean salir = false;
+
+        // Variables para almacenar los parámetros de simulación
+        double velocidadSimulacion = 1.0;
+        double temperaturaInicial = 25.0;
+        int duracionSimulacion = 100;
+
+        while (!salir) {
+            System.out.println ( "\n--- Interfaz de Usuario ---" );
+            System.out.println ( "1. Configurar Simulación" );
+            System.out.println ( "2. Iniciar Simulación" );
+            System.out.println ( "3. Detener Simulación" );
+            System.out.println ( "4. salir" );
+            int opcion = scanner.nextInt ();
+            scanner.nextLine (); // Consumir el salto de línea
+
+            switch (opcion) {
+                case 1:
+                    System.out.println ( "--- Configuración de Simulación ---" );
+                    System.out.print ( "Ingrese la velocidad de simulación (por defecto es 1.0): " );
+                    velocidadSimulacion = scanner.nextDouble ();
+                    System.out.print ( "Ingrese la temperatura inicial (en grados Celsius, por defecto es 25.0): " );
+                    temperaturaInicial = scanner.nextDouble ();
+                    System.out.print ( "Ingrese la duración de la simulación (en días, por defecto es 100): " );
+                    duracionSimulacion = scanner.nextInt ();
+                    break;
+                case 2:
+                    System.out.println ( "Iniciando la simulación..." );
+                    // Aquí puedes iniciar la simulación con los parámetros configurados previamente
+                    System.out.println ( "Velocidad de simulación: " + velocidadSimulacion );
+                    System.out.println ( "Temperatura inicial: " + temperaturaInicial + "°C" );
+                    System.out.println ( "Duración de la simulación: " + duracionSimulacion + " días" );
+                    break;
+                case 3:
+                    System.out.println ( "Deteniendo la simulación..." );
+                    // Aquí puedes detener la simulación en curso
+                    break;
+                case 4:
+                    salir = true;
+                    System.out.println ( "Saliendo del programa..." );
+                    break;
+                default:
+                    System.out.println ( "Opción no válida, intente de nuevo." );
+                    break;
+            }
+        }
+    }
+
+
 
 
 
