@@ -139,4 +139,14 @@ public class Main {
             // Implementación para evaluar estrategias de conservación
             // Por ejemplo, analizar el impacto de medidas de protección de especies en peligro
         }
+
+        public void buscarEquilibrioEcologico() {
+            // Implementación para buscar equilibrios ecológicos
+            // Por ejemplo, calcular la diversidad de especies y evaluar la estabilidad del ecosistema
+        }
+
+        public void evaluarEstrategiasConservacion() {
+            // Implementación para evaluar estrategias de conservación
+            // Por ejemplo, analizar el impacto de medidas de protección de especies en peligro
+        }
 }
