@@ -183,6 +183,19 @@ public class Main {
             System.out.println ( "Nueva regla integrada: " + nuevaRegla );
         }
 
+        // Ejemplo de cómo podrías permitir al usuario configurar parámetros personalizados
+        System.out.println ( "¿Desea configurar parámetros personalizados para la simulación? (s/n)" );
+        respuesta = scanner.next ();
+        if (respuesta.equalsIgnoreCase ( "s" )) {
+            System.out.println ( "Ingrese el nombre del parámetro:" );
+            String nombreParametro = scanner.next ();
+            System.out.println ( "Ingrese el valor del parámetro:" );
+            double valorParametro = scanner.nextDouble ();
+            System.out.println ( "Parámetro configurado: " + nombreParametro + " = " + valorParametro );
+        }
+
+    }
+
 
 
 
