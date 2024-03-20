@@ -360,6 +360,34 @@ public class Main {
             int opcion = scanner.nextInt ();
             scanner.nextLine (); // Consumir el salto de línea
 
+            switch (opcion) {
+                case 1:
+                    simularCrecimientoYReproduccion ( ambiente, simulador );
+                    // Lógica para simular el crecimiento y reproducción
+
+                    break;
+                case 2:
+                    simularEventosAleatorios ( ambiente, simulador );
+                    // Lógica para simular eventos aleatorios
+
+                    break;
+                case 3:
+                    verResultadosSimulacion ( ambiente, simulador );
+                    // Lógica para ver resultados de la simulación
+
+                    break;
+                case 4:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println ( "Opción no válida, intente de nuevo." );
+                    break;
+            }
+        }
+
+    }
+
+
 
 
 
