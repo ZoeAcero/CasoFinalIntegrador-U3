@@ -107,4 +107,21 @@ public class Main {
         int numEspecies = scanner.nextInt ();
         scanner.nextLine (); // Consumir la nueva línea después de leer el número de especies
 
+        // Inicializar los arrays para almacenar las tasas de reproducción y mortalidad
+        tasasReproduccion = new double[numEspecies];
+        tasasMortalidad = new double[numEspecies];
+
+        // Solicitar al usuario las características de cada especie
+        for (int i = 0; i < numEspecies; i++) {
+            System.out.println ( "Especie " + (i + 1) + ":" );
+            System.out.print ( "  Tasa de reproducción: " );
+            tasasReproduccion[i] = scanner.nextDouble ();
+            scanner.nextLine (); // Consumir la nueva línea después de leer la tasa de reproducción
+            System.out.print ( "  Tasa de mortalidad: " );
+            tasasMortalidad[i] = scanner.nextDouble ();
+            scanner.nextLine (); // Consumir la nueva línea después de leer la tasa de mortalidad
+        }
+
+
+
 
