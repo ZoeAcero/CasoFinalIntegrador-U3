@@ -538,6 +538,38 @@ public class Main {
         }
     }
 
+    public class SimuladorEcologico {
+        public static double[] tasasReproduccion;
+        private static double[] tasasMortalidad;
+
+        // Método para ejecutar la simulación
+        public static void ejecutarSimulacion ( Scanner scanner ) {
+            System.out.println ( "Ejecutando simulación..." );
+
+            // Solicitar al usuario datos de entrada específicos para la simulación
+            System.out.print ( "Ingrese el número de especies en la simulación: " );
+            int numEspecies = scanner.nextInt ();
+            scanner.nextLine (); // Consumir el carácter de nueva línea pendiente
+
+            // Arrays para almacenar las características de cada especie
+            double[] tasasReproduccion = new double[numEspecies];
+            double[] tasasMortalidad = new double[numEspecies];
+
+            // Solicitar al usuario las características de cada especie
+            for (int i = 0; i < numEspecies; i++) {
+                System.out.println ( "Especie " + (i + 1) + ":" );
+                System.out.print ( "  Tasa de reproducción: " );
+                tasasReproduccion[i] = scanner.nextDouble ();
+                scanner.nextLine (); // Consumir el carácter de nueva línea pendiente
+                System.out.print ( "  Tasa de mortalidad: " );
+                tasasMortalidad[i] = scanner.nextDouble ();
+                scanner.nextLine (); // Consumir el carácter de nueva línea pendiente
+            }
+
+            // Mostrar los resultados de la simulación
+            visualizarResultados ( scanner, tasasReproduccion, tasasMortalidad );
+        }
+
 
 
 
