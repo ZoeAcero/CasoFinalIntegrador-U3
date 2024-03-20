@@ -617,6 +617,16 @@ public class Main {
         }
     }
 
+    // Método principal para ejecutar el programa
+
+
+    static class Planta {
+        private String nombre;
+        private String tipo;
+        private double altura;
+        private String salud;
+        private boolean estadoReproduccion;
+
 
 
 
