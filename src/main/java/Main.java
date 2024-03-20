@@ -264,6 +264,20 @@ public class Main {
         }
     }
 
+    public static void modeladoEntidadesMenu ( Ambiente ambiente ) {
+        Scanner scanner = new Scanner ( System.in );
+        boolean salir = false;
+
+        while (!salir) {
+            System.out.println ( "\n--- Modelado de Entidades ---" );
+            System.out.println ( "1. Crear Planta" );
+            System.out.println ( "2. Crear Animal" );
+            System.out.println ( "3. Volver al Menú Principal" );
+            System.out.print ( "Seleccione una opción: " );
+            int opcion = scanner.nextInt ();
+            scanner.nextLine (); // Consumir el salto de línea
+
+
 
 
 
