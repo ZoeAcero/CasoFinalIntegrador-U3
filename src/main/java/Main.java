@@ -195,6 +195,22 @@ public class Main {
         }
 
     }
+    public static void resolucionproblemas ( Scanner scanner ){
+        ResolucionProblemas problemas = new ResolucionProblemas ();
+
+        boolean salir = false;
+        while (!salir) {
+            System.out.println("\nMenú de Resolución de Problemas:");
+            System.out.println("1. Buscar equilibrio ecológico");
+            System.out.println("2. Evaluar estrategias de conservación");
+            System.out.println("3. Calcular impacto de la humanidad");
+            System.out.println("4. Analizar resiliencia del ecosistema");
+            System.out.println("5. Salir");
+            System.out.print("Ingrese una opción: ");
+
+            int opcion = scanner.nextInt();
+            scanner.nextLine(); // Limpiar el buffer de entrada
+
 
 
 
