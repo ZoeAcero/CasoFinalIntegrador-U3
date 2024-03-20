@@ -251,6 +251,21 @@ public class Main {
             System.out.println("Evaluar estrategias de conservación...");
         }
 
+        public void calcularImpactoHumanidad() {
+            // Implementación para calcular el impacto de la actividad humana en el ecosistema
+            // Por ejemplo, evaluar el efecto de la deforestación o la contaminación en la biodiversidad
+            System.out.println("Calcular impacto de la humanidad...");
+        }
+
+        public void analizarResilienciaEcosistema() {
+            // Implementación para analizar la resiliencia del ecosistema ante perturbaciones
+            // Por ejemplo, estudiar cómo se recupera el ecosistema después de un incendio forestal
+            System.out.println("Analizar resiliencia del ecosistema...");
+        }
+    }
+
+
+
 
 
 
