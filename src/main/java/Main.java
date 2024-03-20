@@ -346,6 +346,21 @@ public class Main {
         System.out.println ( "¡Animal creado exitosamente!" );
     }
 
+    public static void simuladorPoblacionalMenu ( Ambiente ambiente, Simulador simulador ) {
+        Scanner scanner = new Scanner ( System.in );
+        boolean salir = false;
+
+        while (!salir) {
+            System.out.println ( "\n--- Simulador de Dinámicas Poblacionales ---" );
+            System.out.println ( "1. Simular Crecimiento y Reproducción" );
+            System.out.println ( "2. Simular Eventos Aleatorios" );
+            System.out.println ( "3. Ver Resultados de la Simulación" );
+            System.out.println ( "4. Volver al Menú Principal" );
+            System.out.print ( "Seleccione una opción: " );
+            int opcion = scanner.nextInt ();
+            scanner.nextLine (); // Consumir el salto de línea
+
+
 
 
 
