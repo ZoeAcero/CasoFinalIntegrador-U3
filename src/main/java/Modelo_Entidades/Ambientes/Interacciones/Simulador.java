@@ -40,4 +40,9 @@ public class Simulador {
     }
 
 
+    public void verResultadosSimulacion(Ambiente ambiente) {
+    }
+
+    public void simularCrecimientoyReproduccion(Ambiente ambiente, double v, int i) {
+    }
 }

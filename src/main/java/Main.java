@@ -390,7 +390,7 @@ public class Main {
 
     public static void simularCrecimientoYReproduccion ( Ambiente ambiente, Simulador simulador ) {
         // Lógica para simular el crecimiento y reproducción
-        simulador.simularCrecimientoYReproduccion ( ambiente, 3.0, 1000 );
+        simulador.simularCrecimientoyReproduccion  ( ambiente, 3.0, 1000 );
         System.out.println ( "Simulación de crecimiento y reproducción realizada." );
     }
 
