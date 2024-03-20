@@ -296,6 +296,23 @@ public class Main {
         }
     }
 
+    public static void crearNuevaPlanta ( Scanner scanner ) {
+        System.out.println ( "Ingrese el nombre de la planta:" );
+        String nombre = scanner.next ();
+
+        System.out.println ( "Ingrese el tipo de la planta:" );
+        String tipo = scanner.next ();
+
+        System.out.println ( "Ingrese la altura de la planta:" );
+        double altura = scanner.nextDouble ();
+
+        System.out.println ( "Ingrese el estado de salud de la planta (bueno, regular, malo):" );
+        String salud = scanner.next ();
+
+        System.out.println ( "Ingrese el estado de reproducción de la planta (true/false):" );
+        boolean estadoReproduccion = scanner.nextBoolean ();
+
+
 
 
 
