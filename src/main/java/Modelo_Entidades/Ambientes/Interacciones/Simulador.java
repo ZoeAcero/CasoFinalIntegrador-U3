@@ -11,6 +11,9 @@ public class Simulador {
     private List<Organismo> organismos;
     private Ambiente ambiente;
 
+    public Simulador(double v, double v1) {
+    }
+
     // Metodos para simular interacciones
 
     public void agregarOrganismo(Organismo organismo) {

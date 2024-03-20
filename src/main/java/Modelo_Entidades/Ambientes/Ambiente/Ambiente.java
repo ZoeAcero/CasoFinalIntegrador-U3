@@ -17,6 +17,9 @@ public class Ambiente {
         this.clima = clima;
    }
 
+    public Ambiente(String tropical, String selva, int cantidadLuz, int i, int i1) {
+    }
+
     // Metodos getters y setters
 
     public int getTemperatura() {
