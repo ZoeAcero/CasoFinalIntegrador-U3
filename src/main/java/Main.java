@@ -1,13 +1,7 @@
 
-import Analisis_Avanzado.Resolucion_Problemas.ResolucionProblemas;
-import Gestion_Usuarios_Simulaciones.*;
 import Gestion_Usuarios_Simulaciones.Registro_Actividades.RegistroActividades;
-import Modelo_Entidades.Ambientes.*;
 import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
 import Modelo_Entidades.Ambientes.Interacciones.Simulador;
-import Modelo_Entidades.Ambientes.Organismos.Animal;
-import Modelo_Entidades.Ambientes.Organismos.Planta;
-import Simulador_Dinamicas_Poblacionales.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
