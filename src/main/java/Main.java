@@ -1,4 +1,5 @@
 import Analisis_Avanzado.*;
+import Analisis_Avanzado.Resolucion_Problemas.ResolucionProblemas;
 import Gestion_Usuarios_Simulaciones.*;
 import Modelo_Entidades.Ambientes.*;
 import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
@@ -82,7 +83,7 @@ public class Main {
                     integrarNuevasFunciones(scanner);
                     break;
                 case 4:
-                    new ResolucionProblemas (scanner);
+                    new ResolucionProblemas(scanner);
                     break;
                 case 5:
                     salir = true;
@@ -94,4 +95,16 @@ public class Main {
         }
         scanner.close();
     }
+
+    public static class ResolucionProblemas {
+        public ResolucionProblemas ( Scanner scanner ) {
+            System.out.println ( "\n--- Resolución de Problemas ---" );
+            System.out.println ( "1. Buscar equilibrio ecológico" );
+            System.out.println ( "2. Evaluar estrategias de conservación" );
+            System.out.println ( "3. Calcular impacto de la actividad humana" );
+            System.out.println ( "4. Analizar resiliencia del ecosistema" );
+            System.out.println ( "5. Otros métodos de resolución de problemas" );
+            System.out.print ( "Seleccione una opción: " );
+            int opcion = scanner.nextInt ();
+            scanner.nextLine (); // Consumir el salto de línea
 }
