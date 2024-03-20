@@ -387,6 +387,18 @@ public class Main {
 
     }
 
+    public static void simularCrecimientoYReproduccion ( Ambiente ambiente, Simulador simulador ) {
+        // Lógica para simular el crecimiento y reproducción
+        simulador.simularCrecimientoYReproduccion ( ambiente, 3.0, 1000 );
+        System.out.println ( "Simulación de crecimiento y reproducción realizada." );
+    }
+
+    public static void verResultadosSimulacion ( Ambiente ambiente, Simulador simulador ) {
+        // Lógica para ver resultados de la simulación
+        simulador.verResultadosSimulacion ( ambiente );
+        // No es necesario imprimir aquí, ya que se imprime dentro del método verResultadosSimulacion
+    }
+
 
 
 
