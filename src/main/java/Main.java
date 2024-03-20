@@ -51,4 +51,7 @@ public class Main {
             }
         }
     }
+
+    private static void analisisAvanzadoMenu(Scanner scanner) {
+        boolean salir = false;
 }
