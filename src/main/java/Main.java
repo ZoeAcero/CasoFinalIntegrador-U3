@@ -77,4 +77,21 @@ public class Main {
                     } else {
                         System.out.println("Primero debes ejecutar la simulación.");
                     }
+                    break;
+                case 3:
+                    integrarNuevasFunciones(scanner);
+                    break;
+                case 4:
+                    new ResolucionProblemas (scanner);
+                    break;
+                case 5:
+                    salir = true;
+                    System.out.println("Saliendo del programa.");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Por favor, ingrese una opción válida.");
+            }
+        }
+        scanner.close();
+    }
 }
