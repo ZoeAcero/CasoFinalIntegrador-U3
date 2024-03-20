@@ -96,57 +96,15 @@ public class Main {
 
     }
 
-    public static class ResolucionProblemas {
-        public ResolucionProblemas ( Scanner scanner ) {
-            System.out.println ( "\n--- Resolución de Problemas ---" );
-            System.out.println ( "1. Buscar equilibrio ecológico" );
-            System.out.println ( "2. Evaluar estrategias de conservación" );
-            System.out.println ( "3. Calcular impacto de la actividad humana" );
-            System.out.println ( "4. Analizar resiliencia del ecosistema" );
-            System.out.println ( "5. Otros métodos de resolución de problemas" );
-            System.out.print ( "Seleccione una opción: " );
-            int opcion = scanner.nextInt ();
-            scanner.nextLine (); // Consumir el salto de línea
+    private static double[] tasasReproduccion;
+    private static double[] tasasMortalidad;
 
-            switch (opcion) {
-                case 1:
-                    buscarEquilibrioEcologico ();
-                    break;
-                case 2:
-                    evaluarEstrategiasConservacion ();
-                    break;
-                case 3:
-                    calcularImpactoHumanidad ();
-                    break;
-                case 4:
-                    analizarResilienciaEcosistema ();
-                    break;
-                case 5:
-                    // Otros métodos de resolución de problemas
-                    break;
-                default:
-                    System.out.println ( "Opción no válida, intente de nuevo." );
-                    break;
-            }
-        }
+    public static void ejecutarSimulacion ( Scanner scanner ) {
+        System.out.println ( "Ejecutando simulación..." );
 
-        public void buscarEquilibrioEcologico() {
-            // Implementación para buscar equilibrios ecológicos
-            // Por ejemplo, calcular la diversidad de especies y evaluar la estabilidad del ecosistema
-        }
+        // Solicitar al usuario datos de entrada específicos para la simulación
+        System.out.print ( "Ingrese el número de especies en la simulación: " );
+        int numEspecies = scanner.nextInt ();
+        scanner.nextLine (); // Consumir la nueva línea después de leer el número de especies
 
-        public void evaluarEstrategiasConservacion() {
-            // Implementación para evaluar estrategias de conservación
-            // Por ejemplo, analizar el impacto de medidas de protección de especies en peligro
-        }
 
-        public void buscarEquilibrioEcologico() {
-            // Implementación para buscar equilibrios ecológicos
-            // Por ejemplo, calcular la diversidad de especies y evaluar la estabilidad del ecosistema
-        }
-
-        public void evaluarEstrategiasConservacion() {
-            // Implementación para evaluar estrategias de conservación
-            // Por ejemplo, analizar el impacto de medidas de protección de especies en peligro
-        }
-}
