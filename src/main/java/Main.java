@@ -6,6 +6,7 @@ import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
 import Modelo_Entidades.Ambientes.Interacciones.Simulador;
 import Simulador_Dinamicas_Poblacionales.*;
 import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.category.DefaultCategoryDataset;
 
@@ -146,6 +147,24 @@ public class Main {
                 "Tasa",
                 dataset
         );
+
+        // Mostrar el gráfico en un panel
+        JFrame frame = new JFrame ( "Resultados de la simulación" );
+        frame.setLayout ( new BorderLayout () );
+        frame.setDefaultCloseOperation ( JFrame.DISPOSE_ON_CLOSE );
+        ChartPanel chartPanel = new ChartPanel ( chart );
+        frame.add ( chartPanel, BorderLayout.CENTER );
+        frame.setSize ( 800, 600 );
+        frame.setLocationRelativeTo ( null );
+        frame.setVisible ( true );
+
+        // Mostrar también las tasas de reproducción y mortalidad en la consola
+        System.out.println ( "\nTasas de reproducción y mortalidad de las especies:" );
+        for (int i = 0; i < tasasReproduccion.length; i++) {
+            System.out.println ( "Especie " + (i + 1) + ":" );
+            System.out.println ( "  Tasa de reproducción: " + tasasReproduccion[i] );
+            System.out.println ( "  Tasa de mortalidad: " + tasasMortalidad[i] );
+        }
 
 
 
