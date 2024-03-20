@@ -678,6 +678,22 @@ public class Main {
         }
     }
 
+    static class Animal {
+        private String nombre;
+        private String especie;
+        private int edad;
+        private String genero;
+        private String color;
+
+        // Constructor
+        public Animal ( String nombre, String especie, int edad, String genero, String color ) {
+            this.nombre = nombre;
+            this.especie = especie;
+            this.edad = edad;
+            this.genero = genero;
+            this.color = color;
+        }
+
 
 
 
