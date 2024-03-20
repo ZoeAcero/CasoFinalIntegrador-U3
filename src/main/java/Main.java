@@ -235,6 +235,22 @@ public class Main {
 
     }
 
+    static class ResolucionProblemas {
+        public void buscarEquilibrioEcologico() {
+            System.out.println("Calculando diversidad de especies y evaluando estabilidad del ecosistema...");
+            // Aquí iría la lógica para calcular la diversidad de especies y evaluar la estabilidad del ecosistema
+            // Por ejemplo, supongamos que estamos realizando un cálculo aleatorio para la diversidad
+            Random random = new Random();
+            double diversidad = random.nextDouble() * 100; // Supongamos que el valor de diversidad está en un rango de 0 a 100
+            System.out.println("La diversidad del ecosistema es: " + diversidad);
+        }
+
+        public void evaluarEstrategiasConservacion() {
+            // Implementación para evaluar estrategias de conservación
+            // Por ejemplo, analizar el impacto de medidas de protección de especies en peligro
+            System.out.println("Evaluar estrategias de conservación...");
+        }
+
 
 
 
