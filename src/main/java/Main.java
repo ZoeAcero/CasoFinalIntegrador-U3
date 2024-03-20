@@ -5,6 +5,10 @@ import Modelo_Entidades.Ambientes.*;
 import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
 import Modelo_Entidades.Ambientes.Interacciones.Simulador;
 import Simulador_Dinamicas_Poblacionales.*;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.category.DefaultCategoryDataset;
+
 import java.util.Scanner;
 import java.util.Random;
 import java.awt.*;
@@ -121,6 +125,27 @@ public class Main {
             tasasMortalidad[i] = scanner.nextDouble ();
             scanner.nextLine (); // Consumir la nueva línea después de leer la tasa de mortalidad
         }
+
+        System.out.println ( "Simulación ejecutada correctamente." );
+    }
+
+    public static void visualizarResultados ( Scanner scanner, double[] tasasReproduccion, double[] tasasMortalidad ) {
+        System.out.println ( "Visualizando resultados de la simulación:" );
+
+        // Crear un conjunto de datos para el gráfico
+        DefaultCategoryDataset dataset = new DefaultCategoryDataset ();
+        for (int i = 0; i < tasasReproduccion.length; i++) {
+            dataset.addValue ( tasasReproduccion[i], "Tasa de reproducción", "Especie " + (i + 1) );
+            dataset.addValue ( tasasMortalidad[i], "Tasa de mortalidad", "Especie " + (i + 1) );
+        }
+
+        // Crear el gráfico
+        JFreeChart chart = ChartFactory.createBarChart (
+                "Tasas de reproducción y mortalidad por especie",
+                "Especies",
+                "Tasa",
+                dataset
+        );
 
 
 
