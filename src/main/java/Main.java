@@ -570,6 +570,39 @@ public class Main {
             visualizarResultados ( scanner, tasasReproduccion, tasasMortalidad );
         }
 
+        // Método para visualizar los resultados de la simulación
+        public static void visualizarResultados ( Scanner scanner, double[] tasasReproduccion, double[] tasasMortalidad ) {
+            System.out.println ( "Visualizando resultados de la simulación:" );
+
+            // Mostrar las tasas de reproducción y mortalidad de cada especie
+            System.out.println ( "\nTasas de reproducción y mortalidad de las especies:" );
+            for (int i = 0; i < tasasReproduccion.length; i++) {
+                System.out.println ( "Especie " + (i + 1) + ":" );
+                System.out.println ( "  Tasa de reproducción: " + tasasReproduccion[i] );
+                System.out.println ( "  Tasa de mortalidad: " + tasasMortalidad[i] );
+            }
+
+            // Aquí puedes agregar más lógica para mostrar otros resultados de la simulación
+            // según sea necesario
+
+            // Regresar al menú principal
+            System.out.println ( "\nPresione Enter para volver al menú principal." );
+            scanner.nextLine (); // Esperar a que el usuario presione Enter
+        }
+
+        // Método para permitir la integración de nuevas funciones
+        public static void integrarNuevasFunciones ( Scanner scanner ) {
+            System.out.println ( "Integrando nuevas funciones..." );
+
+            // Ejemplo de cómo podrías permitir al usuario definir nuevas reglas de interacción entre especies
+            System.out.println ( "¿Desea definir nuevas reglas de interacción entre especies? (s/n)" );
+            String respuesta = scanner.next ();
+            if (respuesta.equalsIgnoreCase ( "s" )) {
+                System.out.println ( "Ingrese la nueva regla de interacción entre especies:" );
+                String nuevaRegla = scanner.next ();
+                System.out.println ( "Nueva regla integrada: " + nuevaRegla );
+            }
+
 
 
 
