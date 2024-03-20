@@ -65,4 +65,16 @@ public class Main {
             System.out.print("Ingrese una opción: ");
             int opcion = scanner.nextInt();
             scanner.nextLine(); // Consumir la nueva línea después de leer la opción
+
+            switch (opcion) {
+                case 1:
+                    ejecutarSimulacion(scanner);
+                    break;
+                case 2:
+                    // Verificar si se han ejecutado previamente la simulación
+                    if (tasasReproduccion != null && tasasMortalidad != null) {
+                        visualizarResultados(scanner, tasasReproduccion, tasasMortalidad);
+                    } else {
+                        System.out.println("Primero debes ejecutar la simulación.");
+                    }
 }
