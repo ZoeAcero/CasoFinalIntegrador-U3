@@ -166,6 +166,23 @@ public class Main {
             System.out.println ( "  Tasa de mortalidad: " + tasasMortalidad[i] );
         }
 
+        // Regresar al menú principal
+        System.out.println ( "\nPresione Enter para volver al menú principal." );
+        scanner.nextLine (); // Esperar a que el usuario presione Enter
+    }
+
+    public static void integrarNuevasFunciones ( Scanner scanner ) {
+        System.out.println ( "Integrando nuevas funciones..." );
+
+        // Ejemplo de cómo podrías permitir al usuario definir nuevas reglas de interacción entre especies
+        System.out.println ( "¿Desea definir nuevas reglas de interacción entre especies? (s/n)" );
+        String respuesta = scanner.next ();
+        if (respuesta.equalsIgnoreCase ( "s" )) {
+            System.out.println ( "Ingrese la nueva regla de interacción entre especies:" );
+            String nuevaRegla = scanner.next ();
+            System.out.println ( "Nueva regla integrada: " + nuevaRegla );
+        }
+
 
 
 
