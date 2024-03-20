@@ -517,6 +517,27 @@ public class Main {
         }
     }
 
+    public static boolean autenticacion () {
+        Scanner scanner = new Scanner ( System.in );
+        System.out.println ( "Ingrese su nombre de usuario:" );
+        String usuario = scanner.nextLine ();
+        System.out.println ( "Ingrese su contraseña:" );
+        String contrasena = scanner.nextLine ();
+
+        // Usuario y contraseña predefinidos
+        String usuarioCorrecto = "vitaliy";
+        String contrasenaCorrecta = "mercadona";
+
+        // Verificar si el usuario y la contraseña ingresados coinciden con los predefinidos
+        if (usuario.equals ( usuarioCorrecto ) && contrasena.equals ( contrasenaCorrecta )) {
+            System.out.println ( "¡Autenticación exitosa!" );
+            return true;
+        } else {
+            System.out.println ( "Usuario o contraseña incorrectos. Inténtelo de nuevo." );
+            return false;
+        }
+    }
+
 
 
 
