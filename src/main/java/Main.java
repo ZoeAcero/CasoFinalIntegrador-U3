@@ -69,31 +69,31 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    ejecutarSimulacion(scanner);
+                    ejecutarSimulacion ( scanner );
                     break;
                 case 2:
                     // Verificar si se han ejecutado previamente la simulación
                     if (tasasReproduccion != null && tasasMortalidad != null) {
-                        visualizarResultados(scanner, tasasReproduccion, tasasMortalidad);
+                        visualizarResultados ( scanner, tasasReproduccion, tasasMortalidad );
                     } else {
-                        System.out.println("Primero debes ejecutar la simulación.");
+                        System.out.println ( "Primero debes ejecutar la simulación." );
                     }
                     break;
                 case 3:
-                    integrarNuevasFunciones(scanner);
-                    break;
-                case 4:
-                    new ResolucionProblemas(scanner);
+                    integrarNuevasFunciones ( scanner );
                     break;
                 case 5:
+                    resolucionproblemas ( scanner);
+                    break;
+                case 4:
                     salir = true;
-                    System.out.println("Saliendo del programa.");
+                    System.out.println ( "Saliendo del programa." );
                     break;
                 default:
-                    System.out.println("Opción inválida. Por favor, ingrese una opción válida.");
+                    System.out.println ( "Opción inválida. Por favor, ingrese una opción válida." );
             }
         }
-        scanner.close();
+
     }
 
     public static class ResolucionProblemas {
