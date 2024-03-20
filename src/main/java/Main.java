@@ -4,6 +4,7 @@ import Gestion_Usuarios_Simulaciones.*;
 import Modelo_Entidades.Ambientes.*;
 import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
 import Modelo_Entidades.Ambientes.Interacciones.Simulador;
+import Modelo_Entidades.Ambientes.Organismos.Animal;
 import Modelo_Entidades.Ambientes.Organismos.Planta;
 import Simulador_Dinamicas_Poblacionales.*;
 import org.jfree.chart.ChartFactory;
@@ -318,6 +319,31 @@ public class Main {
 
         // Aquí puedes hacer algo con la nueva planta, como agregarla a una lista de plantas en tu vivero, etc.
         System.out.println ( "¡Planta creada exitosamente!" );
+    }
+
+
+    public static void crearNuevoAnimal ( Scanner scanner ) {
+        System.out.println ( "Ingrese el nombre del animal:" );
+        String nombre = scanner.next ();
+
+        System.out.println ( "Ingrese la especie del animal:" );
+        String especie = scanner.next ();
+
+        System.out.println ( "Ingrese la edad del animal:" );
+        int edad = scanner.nextInt ();
+
+        // Aquí puedes agregar más atributos según tu clase Animal
+        System.out.println ( "Ingrese el género del animal:" );
+        String genero = scanner.next ();
+
+        System.out.println ( "Ingrese el color del animal:" );
+        String color = scanner.next ();
+
+        // Crear una nueva instancia de Animal con los datos proporcionados
+        Animal nuevoAnimal = new Animal ( nombre, especie, edad, genero, color );
+
+        // Aquí puedes hacer algo con el nuevo animal, como agregarlo a una lista de animales en tu zoológico, etc.
+        System.out.println ( "¡Animal creado exitosamente!" );
     }
 
 
