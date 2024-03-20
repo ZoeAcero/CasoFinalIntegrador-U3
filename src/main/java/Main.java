@@ -627,6 +627,57 @@ public class Main {
         private String salud;
         private boolean estadoReproduccion;
 
+        // Constructor
+        public Planta ( String nombre, String tipo, double altura, String salud, boolean estadoReproduccion ) {
+            this.nombre = nombre;
+            this.tipo = tipo;
+            this.altura = altura;
+            this.salud = salud;
+            this.estadoReproduccion = estadoReproduccion;
+        }
+
+        // Getters y setters
+        public String getNombre () {
+            return nombre;
+        }
+
+        public void setNombre ( String nombre ) {
+            this.nombre = nombre;
+        }
+
+        public String getTipo () {
+            return tipo;
+        }
+
+        public void setTipo ( String tipo ) {
+            this.tipo = tipo;
+        }
+
+        public double getAltura () {
+            return altura;
+        }
+
+        public void setAltura ( double altura ) {
+            this.altura = altura;
+        }
+
+        public String getSalud () {
+            return salud;
+        }
+
+        public void setSalud ( String salud ) {
+            this.salud = salud;
+        }
+
+        public boolean isEstadoReproduccion () {
+            return estadoReproduccion;
+        }
+
+        public void setEstadoReproduccion ( boolean estadoReproduccion ) {
+            this.estadoReproduccion = estadoReproduccion;
+        }
+    }
+
 
 
 
