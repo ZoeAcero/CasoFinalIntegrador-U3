@@ -211,6 +211,30 @@ public class Main {
             int opcion = scanner.nextInt();
             scanner.nextLine(); // Limpiar el buffer de entrada
 
+            switch (opcion) {
+                case 1:
+                    problemas.buscarEquilibrioEcologico();
+                    break;
+                case 2:
+                    problemas.evaluarEstrategiasConservacion();
+                    break;
+                case 3:
+                    problemas.calcularImpactoHumanidad();
+                    break;
+                case 4:
+                    problemas.analizarResilienciaEcosistema();
+                    break;
+                case 5:
+                    salir = true;
+                    System.out.println("Saliendo del programa.");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Por favor, ingrese una opción válida.");
+            }
+        }
+
+    }
+
 
 
 
