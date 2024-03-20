@@ -418,6 +418,56 @@ public class Main {
     }
 
 
+    public static void gestionUsuariosSimulacionesMenu () {
+        Scanner scanner = new Scanner ( System.in );
+        boolean salir = false;
+        boolean usuarioAutenticado = false; // Inicialmente el usuario no está autenticado
+
+        while (!salir) {
+            System.out.println ( "\n--- Gestión de Usuarios y Simulaciones ---" );
+            System.out.println ( "1. Interfaz de Usuario" );
+            System.out.println ( "2. Autenticación" );
+            System.out.println ( "3. Registro de Actividades" );
+            System.out.println ( "4. Volver al Menú Principal" );
+            System.out.print ( "Seleccione una opción: " );
+            int opcion = scanner.nextInt ();
+            scanner.nextLine (); // Consumir el salto de línea
+
+            switch (opcion) {
+                case 1:
+                    if (usuarioAutenticado) {
+                        interfazUsuario ();
+                    } else {
+                        System.out.println ( "Error: Debe autenticarse primero para acceder a la interfaz de usuario." );
+                    }
+                    break;
+                case 2:
+                    usuarioAutenticado = autenticacion ();
+                    if (usuarioAutenticado) {
+                        System.out.println ( "Autenticación exitosa. Ahora puede acceder a la interfaz de usuario." );
+                    } else {
+                        System.out.println ( "Error: La autenticación falló. Inténtelo nuevamente." );
+                    }
+                    break;
+                case 3:
+                    if (usuarioAutenticado) {
+                        RegistroActividades ();
+                    } else {
+                        System.out.println ( "Error: Debe autenticarse primero para acceder al registro de actividades." );
+                    }
+                    break;
+                case 4:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println ( "Opción no válida, intente de nuevo." );
+                    break;
+            }
+        }
+    }
+
+
+
 
 
 
