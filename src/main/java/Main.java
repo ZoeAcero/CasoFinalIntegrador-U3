@@ -4,6 +4,7 @@ import Gestion_Usuarios_Simulaciones.*;
 import Modelo_Entidades.Ambientes.*;
 import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
 import Modelo_Entidades.Ambientes.Interacciones.Simulador;
+import Modelo_Entidades.Ambientes.Organismos.Planta;
 import Simulador_Dinamicas_Poblacionales.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -311,6 +312,13 @@ public class Main {
 
         System.out.println ( "Ingrese el estado de reproducción de la planta (true/false):" );
         boolean estadoReproduccion = scanner.nextBoolean ();
+
+        // Crear una nueva instancia de Planta con los datos proporcionados
+         Planta nuevaPlanta = new Planta ( nombre, tipo, altura, salud, estadoReproduccion );
+
+        // Aquí puedes hacer algo con la nueva planta, como agregarla a una lista de plantas en tu vivero, etc.
+        System.out.println ( "¡Planta creada exitosamente!" );
+    }
 
 
 
