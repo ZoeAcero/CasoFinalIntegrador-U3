@@ -54,4 +54,15 @@ public class Main {
 
     private static void analisisAvanzadoMenu(Scanner scanner) {
         boolean salir = false;
+
+        while (!salir) {
+            System.out.println("\nMenú:");
+            System.out.println("1. Ejecutar simulación");
+            System.out.println("2. Visualizar resultados");
+            System.out.println("3. Integrar nuevas funciones");
+            System.out.println("4. Resolucion problemas");
+            System.out.println("5. Salir");
+            System.out.print("Ingrese una opción: ");
+            int opcion = scanner.nextInt();
+            scanner.nextLine(); // Consumir la nueva línea después de leer la opción
 }
