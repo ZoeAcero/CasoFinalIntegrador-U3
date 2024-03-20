@@ -107,4 +107,26 @@ public class Main {
             System.out.print ( "Seleccione una opción: " );
             int opcion = scanner.nextInt ();
             scanner.nextLine (); // Consumir el salto de línea
+
+            switch (opcion) {
+                case 1:
+                    buscarEquilibrioEcologico ();
+                    break;
+                case 2:
+                    evaluarEstrategiasConservacion ();
+                    break;
+                case 3:
+                    calcularImpactoHumanidad ();
+                    break;
+                case 4:
+                    analizarResilienciaEcosistema ();
+                    break;
+                case 5:
+                    // Otros métodos de resolución de problemas
+                    break;
+                default:
+                    System.out.println ( "Opción no válida, intente de nuevo." );
+                    break;
+            }
+        }
 }
