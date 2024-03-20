@@ -1,6 +1,7 @@
 import Analisis_Avanzado.*;
 import Analisis_Avanzado.Resolucion_Problemas.ResolucionProblemas;
 import Gestion_Usuarios_Simulaciones.*;
+import Gestion_Usuarios_Simulaciones.Registro_Actividades.RegistroActividades;
 import Modelo_Entidades.Ambientes.*;
 import Modelo_Entidades.Ambientes.Ambiente.Ambiente;
 import Modelo_Entidades.Ambientes.Interacciones.Simulador;
@@ -451,7 +452,7 @@ public class Main {
                     break;
                 case 3:
                     if (usuarioAutenticado) {
-                        RegistroActividades ();
+                        new RegistroActividades();
                     } else {
                         System.out.println ( "Error: Debe autenticarse primero para acceder al registro de actividades." );
                     }
