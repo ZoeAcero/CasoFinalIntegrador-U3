@@ -277,6 +277,25 @@ public class Main {
             int opcion = scanner.nextInt ();
             scanner.nextLine (); // Consumir el salto de línea
 
+            switch (opcion) {
+                case 1:
+                    // Lógica para crear una nueva planta
+                    crearNuevaPlanta ( scanner );
+                    break;
+                case 2:
+                    // Lógica para crear un nuevo animal
+                    crearNuevoAnimal ( scanner );
+                    break;
+                case 3:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println ( "Opción no válida, intente de nuevo." );
+                    break;
+            }
+        }
+    }
+
 
 
 
